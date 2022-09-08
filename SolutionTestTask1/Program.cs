@@ -11,11 +11,11 @@ void StringCutter()
 
     int count = 0;  // переменная для накапливания 
 
-    string[] outArray = new string[array.Length]; // создаём новый массив и передаём длину в длинну массива значение count
+    string[] outArray = new string[array.Length]; // создаём новый массив и передаём в длинну массива значение  длины массива array.Length
 
     while (i < array.Length) // цикл для перебора массива
     {
-        if (array[i].Length <= 3) // условие для подсчёта количества элементов массива с длинной 3
+        if (array[i].Length <= 3) // условие для подсчёта количества элементов массива с длинной меньше 3
         {
             outArray[count] = array[i];
             count++;       // накапливаем результат
